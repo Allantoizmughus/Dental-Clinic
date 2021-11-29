@@ -17,8 +17,9 @@ body{
     flex-direction: column;
     align-items: center;
     margin-left: -1000px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-style: italic;
+    color: lightcoral;
+
 }
 #logo{
     margin-top: -18px;
@@ -26,13 +27,33 @@ body{
 }
 nav{
     display: flex;
-    justify-content: space-between;
-    color: blanchedalmond;
+    justify-content: end;
+    text-decoration: none;
     margin-top: 20px;
     
 }
-.nav{
+.nav>a{
     margin: 10px;
     font-weight: bolder;
+    text-decoration: none;
+    color: hotpink;
     
+}
+a:hover{
+    color: lightpink;
+}
+
+.container2{
+    width: 230px;
+    height: 100px;
+    background-color: hotpink; opacity:0.7 ;
+    border-radius: 5px;
+    margin-top: 300px;
+    margin-left: 500px;
+}
+.contact{
+    margin: 10px;
+    color: whitesmoke;
+    font-weight: bold;
+
 }
