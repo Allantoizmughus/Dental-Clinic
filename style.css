@@ -1,0 +1,38 @@
+body{
+    background-image: url("landing bg.jpg");
+    width: 100%;
+    height: 300px;
+    background-size: cover;
+}
+.container1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 1000px;
+
+}
+#title{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    margin-left: -1000px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-style: italic;
+}
+#logo{
+    margin-top: -18px;
+    margin-bottom: -18px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    color: blanchedalmond;
+    margin-top: 20px;
+    
+}
+.nav{
+    margin: 10px;
+    font-weight: bolder;
+    
+}
