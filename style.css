@@ -175,3 +175,36 @@ p{
 #radio4:checked ~ .first{
     margin-left: -60%;
 }
+
+/* css for automatic sliding */
+.auto-navigation{
+    position: absolute;
+    width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-top: 460px;
+
+}
+.auto-navigation div{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+.auto-navigation div:not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .auto-navigation .auto-btn1{
+    background-color: pink;
+}
+#radio2:checked ~ .auto-navigation .auto-btn2{
+    background-color: pink;
+}
+#radio3:checked ~ .auto-navigation .auto-btn3{
+    background-color: pink;
+}
+#radio4:checked ~ .auto-navigation .auto-btn4{
+    background-color: pink;
+}
