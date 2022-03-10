@@ -1,24 +1,12 @@
-// var elements = ['Hydrogen','Helium','Lithium','Beryllium'];
+var counter=1;
 
-// var length = elements.map(element => element.length)
-// console.log(length);
+setInterval(function(){
+    // make slide go to the next iamge
+    document.getElementById('radio' +counter).checked=true;
+    counter++;
 
-// var fruits=['mango','orange','lemon','banana','passion','pears'];
-// console.log(fruits.pop());
-// fruits;
-
-// var total=0;
-// var marks= [2,6,8,3,7,9,4];
-
-// marks.forEach(function(mark){
-//     total += mark;
-// });
-// console.log(total);
-
-var namesLow=['allan', 'max', 'lex', 'lucy'];
-
-var namesUp= namesLow.map(upperCase);
-
-function upperCase(name){
-    console.log(name.toUpperCase());
-}
+    // make slide go back to the first image after the last
+    if(counter>4){
+        counter=1;
+    }
+},5000);
