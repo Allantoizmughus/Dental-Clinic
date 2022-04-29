@@ -402,7 +402,7 @@ and(-webkit-device-pixel-ratio:2){
 } */
 
 
-@media (max-width:576px) {
+@media (max-width:768px) {
     body{
         font-size: 10%;
     }
@@ -421,15 +421,20 @@ and(-webkit-device-pixel-ratio:2){
     #title{
         margin-left: 2px;
     }
-    .nav>a{
+    .nav a{
         font-size: 10px;
         margin-left: 30px;
         text-align: center;
+        padding: 10 10px;
+        margin: 0 3px;
     }
-    nav{
+    .nav{
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-content: space-between;
+        height: 120px;
+        padding: 20px;
     }
     #para>p{
         font-size: 15px;
