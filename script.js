@@ -1,3 +1,10 @@
+$(document).ready(function(){
+
+
+    $("#navIcon").click(function(){
+        $("#dropMenu").toggle();
+    });
+
 var counter=1;
 
 setInterval(function(){
@@ -10,3 +17,7 @@ setInterval(function(){
         counter=1;
     }
 },5000);
+
+
+
+})
