@@ -225,6 +225,8 @@ p{
     font-style: italic;
     font-weight: bold;
     color: lightcoral;
+    padding-left: 50px;
+    padding-right: 100px;
    
 }
 
@@ -236,7 +238,7 @@ p{
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     animation: slide 30s infinite;
     margin-top: 100px;
     margin-left: 0px;
@@ -391,14 +393,101 @@ p{
     justify-content: center;
 }
 
+/* Css for APPOINTMENT PAGE */
+#forms{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form{
+    width: 450px;
+    height: 500px;
+    margin-top: 100px;
+    border: 0.6px solid rgba(255,255 ,255, 0.3);
+    background: rgba(255,255 ,255, 0.1);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0,0 ,0 ,0.2);
+    backdrop-filter: blur(5px);
+}
+.form-group{
+    margin: 30px;
+}
+form>h1{
+    font-size: 30px;
+    text-align: center;
+    font-weight: bolder;
+}
+form>button{
+    width: 70px;
+    height: 30px;
+    text-align: center;
+    margin-left: 50px;
+    border: 1px solid white;
+    background-color: lightcoral;
+    color: white;
+}
+form>button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+.form-group>label{
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+#confirm{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 1100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+#confirm>h2{
+    color: lightcoral;
+}
+#confirm>#horizontal>hr{
+    color: hotpink;
+}
+#confirm>p{
+    font-size: 16px;
+}
+#confirm>a{
+    height: 50px;
+    width: 170px;
+    border: 1px solid white;
+    background-color: hotpink;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 400;
+}
+#confirm>a:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+    border-radius: 5px;
+}
+
 /* dropdown responsiveness */
 #navIcon{
     display: none;
     justify-content: center;
     align-items: center;
-    font-size: 14px;
+    font-size: 17px;
     margin-top: 20px;
     margin-right: 50px;
+}
+#navIcon>a{
+    color: lightpink;
+}
+#navIcon>a:hover{
+    color: hotpink;
 }
 #dropMenu{
    display: none;
@@ -444,6 +533,9 @@ and(-webkit-device-pixel-ratio:2){
 /* Tablet media query */
 @media only screen and 
 (max-width:786px) {
+    html{
+        margin: 0;
+    }
     body{
         margin: 0;
         padding: 0;
@@ -483,6 +575,7 @@ and(-webkit-device-pixel-ratio:2){
         display: flex;
         justify-content: space-between;
         flex-direction: row;
+        position: fixed;
         
     }
     #title>h1{
@@ -580,10 +673,22 @@ and(-webkit-device-pixel-ratio:2){
     #foot3{
         font-size: 13px;
     }
+    /* About page  */
+    .about>p{
+        font-size: 20px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    /* services page */
+    .card-body>p{
+        font-size: 18px;
+    }
     
 }
 
-/* Phone responsiveness */
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* Phone responsiveness////////////////////////////////////////////////////////////////////////////////////////////// */
 @media only screen and (max-width:600px) {
     body{
         margin: 0;
@@ -591,13 +696,14 @@ and(-webkit-device-pixel-ratio:2){
         font-size: 10%;
         background-size: cover;
     }
-    
     #title>h1{
         font-size: 15px;
+        margin: 7px;
     }
     #title>h3{
         font-size: 13px;
         margin-left: 7px;
+        margin-bottom: 0;
     }
     #logo>img{
         height: 30px;
@@ -605,6 +711,7 @@ and(-webkit-device-pixel-ratio:2){
     }
     #title{
         margin-left: 2px;
+        margin-top: -7px;
     }
     nav{
         display: none;
@@ -617,13 +724,14 @@ and(-webkit-device-pixel-ratio:2){
         margin-top: 9px;
     }
     .header{
+        width: 590px;
         height: 50px;
+        padding: 0px;
+        margin: 0;
         display: flex;
         flex-direction: row;
     }
-    #title>h1{
-        margin-top: 15px;
-    }
+    
     .slider{
         background-repeat: no-repeat;
         background-size: cover;
@@ -652,14 +760,14 @@ and(-webkit-device-pixel-ratio:2){
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-bottom: 100px;
+        margin-bottom: 200px;
     }
     #aboutUs>p{
         font-size: 15px;
     }
 
     .container2{
-        margin-top: -250px;
+        margin-top: -200px;
         margin-bottom: 70px;
     }
     #offer>p{
@@ -684,7 +792,7 @@ and(-webkit-device-pixel-ratio:2){
         justify-content: center;
     }
     .staff{
-        margin-top: -150px;
+        margin-top: -50px;
     }
     .person{
         height: 325px;
@@ -715,6 +823,9 @@ and(-webkit-device-pixel-ratio:2){
     }
     #foot3{
         font-size: 10px;
+    }
+    #footer{
+        height: 320px;
     }
     
    
