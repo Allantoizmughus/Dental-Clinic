@@ -18,6 +18,21 @@ setInterval(function(){
     }
 },5000);
 
+window.onscroll= function(){
+    scrollFunction()
+};
+
+function scrollFunction(){
+    if(document.body.scrollTop > 80 || document.documentElement.scrollTop > 80 ){
+        document.getElementById("title").style.transform="scale(0.4)";
+        document.getElementById("head").style.height="50px"
+        document.getElementById("menu").style.marginTop="0px"
+    }else{
+        document.getElementById("title").style.transform="scale(1.0)"
+        document.getElementById("head").style.height="100px"
+    }
+};
+
 
 
 })
