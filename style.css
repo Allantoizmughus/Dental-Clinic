@@ -1,7 +1,7 @@
 body{
     background-image: url("landing bg2.jpg");
     width: 100%;
-    height: 300px;
+    height: 100vh;
     background-size: cover;
    
 }
@@ -17,7 +17,7 @@ body{
     background-color: white;
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 99;
 
 }
 #title{
@@ -84,6 +84,8 @@ p{
 .container{
     margin-top: 150px;
 }
+
+/* Services styling///////////////////////////////////////////////////////////////////////////////////////// */
 .about{
     margin-top: 150px;
 }
@@ -136,6 +138,7 @@ p{
     width: 500%;
     height: 500px;
     display: flex;
+    border-radius: 10px;
 }
 
 #slides input{
@@ -145,6 +148,12 @@ p{
 .image{
     width: 20%;
     transition: 2s;
+    border-radius: 10px;
+}
+.image>img{
+    width: 580px;
+    height: 400px;
+    border-radius: 10px;
 }
 /* css for manual navigation */
 .navigation-manual{
@@ -251,6 +260,8 @@ p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* background-color: rgba(26, 54, 58, 0.5); */
+    background-color: rgba(0,0 ,0 ,0.5);
     
 }
 
@@ -288,15 +299,19 @@ p{
     font-size: 20px;
 }
 
-#profiles{
+.staff>.row{
     display: flex;
-    flex-direction: row;
     justify-content: center;
     align-items: center;
+    margin-left: 50px;
 }
 .person{
-    width: 500px;
-    height: 600px;
+    width: 450px;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: lightcoral;
     background-color: white;
     border-radius: 5px;
     margin: 10px;
@@ -312,12 +327,6 @@ p{
     clip-path: circle();
     text-align: center,center;
     margin-top: 5px;
-}
-.person{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: lightcoral;
 }
 .person h4{
     color: black;
@@ -643,14 +652,19 @@ and(-webkit-device-pixel-ratio:2){
     .staff{
         margin-top: -40px;
     }
-    .person{
+    .staff>.row{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    /* .person{
         height: 325px;
         width: 250px;
     }
     .person>img{
         height: 250px;
         width: 250px;
-    }
+    } */
     #heading>p{
         font-size: 14px;
     }
@@ -794,14 +808,14 @@ and(-webkit-device-pixel-ratio:2){
     .staff{
         margin-top: -50px;
     }
-    .person{
+    /* .person{
         height: 325px;
         width: 250px;
     }
     .person>img{
         height: 250px;
         width: 250px;
-    }
+    } */
     #heading>p{
         font-size: 12px;
     }
@@ -830,4 +844,57 @@ and(-webkit-device-pixel-ratio:2){
     
    
 
+}
+
+@media only screen and (max-width:420px){
+    .header{
+        max-width: 414px;
+    }
+    nav{
+        display: none;
+    }
+    #navIcon{
+        display: block;
+    }
+    #dropMenu{
+        display: none;
+        margin-top: 9px;
+    }
+
+    .slider{
+        height: 70vh;
+    }
+
+    .image{
+        width: 300px;
+        height: 350px;
+    }
+    .image>img{
+        width: 300px;
+        height: 350px;
+    }
+
+    .navigation-manual{
+        margin-top: -170px;
+    }
+    .auto-navigation{
+        margin-top: 330px;
+    }
+
+    .person{
+        height: 325px;
+        width: 250px;
+    }
+    .person>img{
+        height: 250px;
+        width: 250px;
+    }
+
+    #foot2{
+        display: flex;
+        flex-direction: column;
+    }
+    #footer{
+        height: 550px;
+    }
 }
