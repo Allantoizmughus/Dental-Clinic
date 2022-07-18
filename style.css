@@ -241,6 +241,17 @@ p{
     padding-right: 100px;
    
 }
+#para>a>img{
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    bottom: 70px;
+    right: 50px;
+}
+#para>a>img:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
 
 .load{
     animation: slide 2s;
@@ -880,6 +891,14 @@ and(-webkit-device-pixel-ratio:2){
 
     .slider{
         height: 70vh;
+    }
+    #para>a>img{
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        right: 30px;
+        bottom: 170px;
+
     }
 
     .image{
