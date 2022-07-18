@@ -433,6 +433,7 @@ form>h1{
 form>button{
     width: 70px;
     height: 30px;
+    font-size: 16px;
     text-align: center;
     margin-left: 50px;
     border: 1px solid white;
@@ -456,7 +457,7 @@ form>button:hover{
     align-items: center;
     background-color: white;
     width: 1100px;
-    margin-left: 100px;
+    margin-left: 0px;
     margin-bottom: 50px;
 }
 #confirm>h2{
@@ -516,7 +517,8 @@ form>button:hover{
 #dropMenu>.nav>a{
    float: none;
    color: black;
-   padding: 12px 16px;
+   font-size: 17px;
+   padding: 5px 16px;
    text-decoration: none;
    display: block;
    text-align: left;
@@ -583,7 +585,7 @@ and(-webkit-device-pixel-ratio:2){
     }
 
     .header{
-        height: 50px;
+        max-height: 50px;
         display: flex;
         justify-content: space-between;
         flex-direction: row;
@@ -715,6 +717,9 @@ and(-webkit-device-pixel-ratio:2){
 /* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 /* Phone responsiveness////////////////////////////////////////////////////////////////////////////////////////////// */
 @media only screen and (max-width:600px) {
+    html{
+        margin: 0px;
+    }
     body{
         margin: 0;
         padding: 0;
@@ -750,7 +755,7 @@ and(-webkit-device-pixel-ratio:2){
     }
     .header{
         width: 590px;
-        height: 50px;
+        max-height: 50px;
         padding: 0px;
         margin: 0;
         display: flex;
@@ -856,7 +861,8 @@ and(-webkit-device-pixel-ratio:2){
    
 
 }
-
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
 @media only screen and (max-width:420px){
     .header{
         max-width: 414px;
